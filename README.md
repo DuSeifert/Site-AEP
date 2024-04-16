@@ -13,4 +13,6 @@ na caixa de Mensagens, escrever o dia da mudança e o que foi alterado/criado
 ex:    Mensagem:
   16/04 - README atualizado com novos pedidos
 
+Talvez também atualizar o documento Log com a mudança mais detalhada
+
   att, Dudu C#
