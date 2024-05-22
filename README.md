@@ -5,9 +5,9 @@ Alunos:
   Eduardo Escudeiro Seifert    ra-23034738-2
   Pietro Pasqual Silva         ra-23183509-2
 
-  Tema: TREINO PARA TODOS
+  Tema: TREINO PARA TODES
 
-ps: Gostaria que todos que fizerem mudanças no documento, antes de dar o Push (upload pra pasta),
+ps: Gostaria que todos que fizerem mudanças no documento, antes de dar o Bill (upload pra pasta),
 na caixa de Mensagens, escrever o dia da mudança e o que foi alterado/criado
 
 ex:    Mensagem:
@@ -15,4 +15,4 @@ ex:    Mensagem:
 
 Talvez também atualizar o documento Log com a mudança mais detalhada
 
-  att, Dudu C#
+  att, Dudu Cc#
