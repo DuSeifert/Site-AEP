@@ -1,0 +1,191 @@
+body{
+    background-color: #211664;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 auto;
+}
+header{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(242, 240, 235, 0.7);
+    border-radius: 12px;
+    padding: 8px;
+    box-shadow: 0px 10px 20px #131c2c;
+    position: sticky;
+    top: 10px;
+    backdrop-filter: blur(10px);
+    transition: 300ms;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10vh;
+    padding-bottom: 100px;
+}
+
+li{
+    display: inline-block;
+    margin-right: 20px;
+    cursor: pointer;
+    font-weight: 300;
+    transition: 300ms;
+    border-style: solid;
+    border-color: rgba(242, 240, 235, 0);
+    padding: 5px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+a { color: inherit; } 
+
+.optheader{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.logoimagem{
+    height: 75px;
+    border-radius: 12px;
+    margin-left: -16px;
+    margin-bottom: -4px;
+}
+
+.mercadoimagem{
+    height: 600px;
+    border-radius: 16px;
+    margin-right: 10vh;
+    margin-top: 5vh;
+}
+
+.logo{
+    margin-left: 20px;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.logbut{
+    padding: 10px;
+    width: 70px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #211664;
+    cursor: pointer;
+    text-align: center;
+    transition: 300ms;
+    font-weight: 500;
+}
+
+h2{
+    margin-top: 5vh;
+    color: #f2f0eb;
+    width: 650px;
+    margin-left: 10vh;
+    font-size: 88px;
+}
+
+.alinhar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.textologin{
+    padding-bottom: 20px;
+    font-weight: 100;
+    font-size: 40px;
+}
+
+section{
+    background-color: rgba(242, 240, 235, 0.7);
+    width: 500px;
+    border-radius: 16px;
+    height: fit-content;
+    padding-bottom: 50px;
+    padding-top: 10px;
+    margin-top: 5vh;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 10px 20px #131c2c;
+}
+
+label{
+    margin-left: -190px;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+input{
+    height: 35px;
+    width: 250px;
+    border-radius: 4px;
+    margin-top: 10px;
+    border: none;
+    transition: 300ms;
+}
+
+#botaoentrar{
+    width: 150px;
+    height: 38px;
+}
+
+.vermelho{
+    color: rgb(173, 0, 0);
+}
+
+h3{
+    margin-top: 5vh;
+    color: #f2f0eb;
+    margin-left: 10vh;
+    font-size: 50px;
+    width: 90%;
+}
+
+/*----------------ANIMAÇÕES----------------*/
+#botaoentrar:hover{
+    scale: 110%;
+}
+
+.logbut:hover{
+    background-color: #211664;
+    color: white;
+    transition: 100ms;
+}
+
+li:hover{
+    transition: 100ms;
+    scale: 110%;
+    border-color: #211664;
+}
+
+li:active{
+    transition: 100ms;
+    background-color: aliceblue;
+    color: black;
+    scale: 95%;
+}
+
+.logbut:active, #botaoentrar:active{
+    scale: 95%;
+    transition: 100ms;
+}
+
+.logo:hover{
+    scale: 105%;
+    transition: 100ms;
+}
+
+header:hover{
+    transition: 100ms;
+}
+
+input:hover{
+    transition: 100ms;
+    scale: 102%;
+    box-shadow: 0px 8px 20px #131c2c;
+}

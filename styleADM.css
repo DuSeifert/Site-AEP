@@ -1,0 +1,217 @@
+body{
+    background-color: #211664;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 auto;
+}
+header{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(242, 240, 235, 0.7);
+    border-radius: 12px;
+    padding: 8px;
+    box-shadow: 0px 10px 20px #131c2c;
+    top: 10px;
+    backdrop-filter: blur(10px);
+    transition: 300ms;
+}
+#lista{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+table{
+    margin: 0 auto;
+    width: 70%;
+    border-collapse: collapse;
+    background-color: rgba(242, 240, 235, 0.7);
+    border-radius: 12px;
+    padding: 2px;
+    margin-top: 30px;
+}
+th, td {
+    text-align: center;
+    padding: 40px;
+    padding-bottom: 10px;
+    border: 1px, solid, black;
+    border-radius: 20px;
+}
+
+li{
+    display: inline-block;
+    margin-right: 20px;
+    cursor: pointer;
+    font-weight: 300;
+    transition: 300ms;
+    border-style: solid;
+    border-color: rgba(242, 240, 235, 0);
+    padding: 5px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+a { color: inherit; } 
+
+.optheader{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.logoimagem{
+    height: 75px;
+    border-radius: 12px;
+    margin-left: -16px;
+    margin-bottom: -4px;
+}
+
+.mercadoimagem{
+    height: 600px;
+    border-radius: 16px;
+    margin-right: 10vh;
+}
+
+.logo{
+    margin-left: 20px;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.logbut, #botao{
+    padding: 10px;
+    width: 70px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #211664;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: 300ms;
+    font-weight: 500;
+}
+
+.carrinho{
+    padding: 10px;
+    width: 20px;
+    margin-bottom: -5px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #211664;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: 300ms;
+    font-weight: 500;
+}
+
+h2{
+    margin-top: 5vh;
+    color: #f2f0eb;
+    width: 600px;
+    margin-left: 10vh;
+    font-size: 70px;
+}
+
+.alinhar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.textologin{
+    font-weight: 100;
+    font-size: 40px;
+}
+
+section{
+    background-color: rgba(242, 240, 235, 0.7);
+    width: 500px;
+    border-radius: 16px;
+    height: fit-content;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin-top: 5vh;
+    box-shadow: 0px 10px 20px #131c2c;
+}
+
+label{
+    margin-left: -180px;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+input, textarea{
+    height: 35px;
+    width: 250px;
+    border-radius: 4px;
+    margin-top: 3px;
+    border: none;
+    transition: 300ms;
+}
+
+textarea{
+    resize: none;
+    height: 200px;
+}
+
+#botaoentrar{
+    width: 150px;
+    height: 38px;
+}
+
+.vermelho{
+    color: rgb(173, 0, 0);
+}
+
+/*----------------ANIMAÇÕES----------------*/
+#botaoentrar:hover, #botao:hover{
+    scale: 110%;
+}
+
+.logbut:hover, #botao:hover{
+    background-color: #211664;
+    color: white;
+    transition: 100ms;
+}
+
+li:hover{
+    transition: 100ms;
+    scale: 110%;
+    border-color: #211664;
+}
+
+li:active{
+    transition: 100ms;
+    background-color: aliceblue;
+    color: black;
+    scale: 95%;
+}
+
+.logbut:active, #botaoentrar:active{
+    scale: 95%;
+    transition: 100ms;
+}
+
+.logo:hover{
+    scale: 105%;
+    transition: 100ms;
+}
+
+header:hover{
+    transition: 100ms;
+}
+
+input:hover{
+    transition: 100ms;
+    scale: 102%;
+    box-shadow: 0px 8px 20px #131c2c;
+}

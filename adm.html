@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Imagens/Logo_redonda.png">
+    <link rel="stylesheet" href="styleADM.css">
+    <title>ADM</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="Imagens/Logo.png" class="logoimagem"></a>
+        </div>
+        <ul>
+            <a href="treinos.html"><li class="optheader">Treinos</li></a>
+        </ul>
+    </header>
+
+    <div class="alinhar">
+        <section>
+            <h1 class="textologin">Cadastro de Treinos</h1>
+            <label for="nomeproduto">Nome</label><br>
+            <input type="text" id="nome"><br><br>
+            <label for="descricao">Descrição</label><br>
+            <textarea id="descricao" rows="4" cols="50"></textarea><br><br>
+            <p class="vermelho" id="aviso"></p><br>
+            <button class="logbut" id="botaoentrar" onclick="adicionar()">Adicionar</button>
+        </section>
+    </div>
+
+    <div class="alinhar">
+        <div id="lista"></div>
+    </div>
+
+    <script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace('descricao');
+    </script>
+    <script src="scriptADM.js"></script>
+</body>
+</html>
