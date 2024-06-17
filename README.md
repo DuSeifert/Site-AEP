@@ -5,7 +5,7 @@ Alunos:
   Eduardo Escudeiro Seifert    ra-23034738-2
   Pietro Pasqual Silva         ra-23183509-2
 
-  Tema: TREINO PARA TODES
+  Tema: TREINO PARA TODOS
 
 ps: Gostaria que todos que fizerem mudanças no documento, antes de dar o Bill (upload pra pasta),
 na caixa de Mensagens, escrever o dia da mudança e o que foi alterado/criado
