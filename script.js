@@ -1,4 +1,3 @@
-const carrinho = [];
 atualizar();
 //----------------------------------------------------------------------------------
 
@@ -26,43 +25,60 @@ function atualizar(){
 }
 
 function mostrar(vetor){
-
     var lista = document.getElementById("catalogo");
     lista.innerHTML = "";
 
-    for(let i=0; i<vetor.length; i++){
-        let obj = vetor[i];
-
-        let tabela = document.createElement("table");
-        tabela.innerHTML =
-        `<tr>
-            <th>Treino:</th>
-            <td>${obj.nome}</td>
-        </tr>
-        <tr>
-            <th>Descrição:</th>
-            <td>${obj.descricao}</td>
-            
-        </tr>
-        <tr>
-            <th>Adicionar à sua lista:</th>
-            <td><button onclick="addcarrinho(${i})" id="botao">+</button></td>
-        </tr>`;
-
-        lista.appendChild(tabela);
+    if(vetor){
+        for (let i = 0; i < vetor.length; i++) {
+            let obj = vetor[i];
     
+            let tabela = document.createElement("table");
+            tabela.innerHTML =
+                `<tr>
+                    <th>Treino:</th>
+                    <td>${obj.nome}</td>
+                </tr>
+                <tr>
+                    <th>Descrição:</th>
+                    <td>${obj.descricao}</td>
+            
+                </tr>
+                <tr>
+                    <th>Adicionar à sua lista:</th>
+                    <td><button onclick="addListaTreinos(${i})" id="botao">+</button></td>
+                </tr>`;
+    
+            lista.appendChild(tabela);
+        }
+    }
+    else{
+        let tabela = document.createElement("table");
+        tabela.innerHTML =`
+            Lista de treinos vazia
+        `;
+        lista.appendChild(tabela);
     }
     console.log(vetor);
 }
 
 //----------------------------------------------------------------------------------
 
-function addcarrinho(item){
-    const stringJson = localStorage.getItem('catalogo');
-    const obj = JSON.parse(stringJson);
+function addListaTreinos(item){
+    const stringJson = JSON.parse(localStorage.getItem('catalogo'));
+    const obj = stringJson[item];
 
-    carrinho.push(obj[item]);
-    const stringNova = JSON.stringify(carrinho);
-    localStorage.setItem('carrinho', stringNova);
-    alert("ITEM ADICIONADO");
+    let ListaTreinos = JSON.parse(localStorage.getItem('ListaTreinos'))
+
+    if(ListaTreinos){
+        ListaTreinos.push(obj);
+    }
+    else{
+        ListaTreinos = [obj];
+    }
+
+    const stringNova = JSON.stringify(ListaTreinos);
+    localStorage.setItem('ListaTreinos', stringNova);
+    alert("TREINO ADICIONADO");
+    
+    console.log(ListaTreinos);
 }
